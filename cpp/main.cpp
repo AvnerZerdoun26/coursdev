@@ -1,4 +1,5 @@
-#include <iostream> 
+#include <iostream>
+#include <string>
 
 /*
 int main ()
@@ -40,11 +41,21 @@ préfixes pour les bases
 */
 int main()
 {
+   std::string message{"atchoum"};
+   std::cout << message << std::endl;
+
+   int file_number{400};
+   std::cout << file_number << std::endl;
+
+   float decimal_n{12.09};
+   std::cout << decimal_n << std::endl;
    
-    int file_number = 0b111111111;
+   int FileNumber = 0b11110000;
+   std::cout << FileNumber << std::endl;
+
     
-    std::cout << file_number << std::endl;
-    
-    
+   
+
+
     return 0; 
 }
