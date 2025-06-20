@@ -38,24 +38,43 @@ préfixes pour les bases
 0b : binaire
 0 : octal
 0x : hexa
-*/
 int main()
 {
-   std::string message{"atchoum"};
-   std::cout << message << std::endl;
-
-   int file_number{400};
-   std::cout << file_number << std::endl;
-
-   float decimal_n{12.09};
-   std::cout << decimal_n << std::endl;
-   
-   int FileNumber = 0b11110000;
-   std::cout << FileNumber << std::endl;
-
+    using namespace std::literals;
     
-   
+auto some_string{"gagner"s};
+   std::cout << some_string << std::endl;
 
 
-    return 0; 
+   return 0; 
+}
+
+*/
+/* 
+goodbit : 1
+failbit : 0
+badbit  : 0
+*/
+
+int main (){
+    std::cout << "Good " << std::cin.good()<< std::endl;
+    std::cout << "Fail " << std::cin.fail() << std::endl;
+    std::cout << "Bad " << std::cin.fail()<< std::endl;
+
+    std::cout << "taper un nbr entie : ";
+    
+
+
+    int number;
+    std::cin >> number;
+    std::cout << "saisi nombre " << number << std::endl;
+    
+    std::cout << "Good " << std::cin.good()<< std::endl;
+    std::cout << "Fail " << std::cin.fail() << std::endl;
+    std::cout << "Bad " << std::cin.fail()<< std::endl;
+  
+    return 0;
+
+
+
 }
