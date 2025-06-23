@@ -54,24 +54,26 @@ auto some_string{"gagner"s};
 goodbit : 1
 failbit : 0
 badbit  : 0
+std::cout << "Good " << std::cin.good()<< std::endl;
+    std::cout << "Fail " << std::cin.fail() << std::endl;
+    std::cout << "Bad " << std::cin.fail()<< std::endl;
 */
 
 int main (){
-    std::cout << "Good " << std::cin.good()<< std::endl;
-    std::cout << "Fail " << std::cin.fail() << std::endl;
-    std::cout << "Bad " << std::cin.fail()<< std::endl;
-
-    std::cout << "taper un nbr entie : ";
-    
-
-
+    std::cout << "entrer un nbr: ";
     int number;
-    std::cin >> number;
-    std::cout << "saisi nombre " << number << std::endl;
+    std::cin>>number;
+    std::string username;
+    std::getline(std::cin, username);
+
     
-    std::cout << "Good " << std::cin.good()<< std::endl;
-    std::cout << "Fail " << std::cin.fail() << std::endl;
-    std::cout << "Bad " << std::cin.fail()<< std::endl;
+    std::cout << "tape ton nom : "; 
+    std::getline(std::cin, username);
+
+    std::cout << "nbr saisie : " << number << std::endl;
+    std::cout << "nom saisie :  " << username << std::endl;
+
+
   
     return 0;
 
